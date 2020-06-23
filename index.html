@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Abroad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div id="header-inner">
+
+            <a id="header-logo" href="#">
+                <img src="images/Artboard 1.svg" alt="">
+            </a>
+            <button id="header-nav-open" class="header-nav-button button icon-button">☰</button>
+            <nav id="header-nav">
+                <button id="header-nav-close" class="header-nav-button button icon-button">&times;</button>
+                <ul id="header-nav-menu" class="menu-list">
+                    <li class="menu-item">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Why Study Abroad</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Countries</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Services</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="content">
+        <section id="section-about" class="section">
+            <div class="section-image image" style="background-image: url('images/stage/3x/Asset 1@3x.png');"></div>
+            <div class="section-inner">
+                <h2 class="section-heading">Looking for Opportunity Abroad?</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+        </section>
+        <section id="section-why" class="section">
+            <div class="section-inner">
+                <h2 class="section-heading">Why Study Abroad?</h2>
+                <div id="section-why-tabs" class="tabs parent">
+                    <div class="tab-control">
+                        <button class="button-parent button button-secondary">Parent</button>
+                        <button class="button-student button button-secondary">Student</button>
+                    </div>
+                    <div class="tab tab-parent">
+                        Parent
+                    </div>
+                    <div class="tab tab-student">
+                        Student
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-countries" class="section">
+            <div class="section-inner">
+                <h2 class="section-heading">Countries</h2>
+                <div id="section-countries-slider" class="slider">
+                    <div>
+                        <div class="slick-slide-content">
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="slick-slide-content">
+                            
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="slick-slide-content">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-services" class="section">
+            <div class="section-image image" style="background-image: url('images/Artboard 1.png');"></div>
+            <div class="section-inner">
+                <h2 class="section-heading">What We Offer</h2>
+                <ol id="section-services-list">
+                    <li>Explore</li>
+                    <li>Apply</li>
+                    <li>Prepare</li>
+                </ol>
+            </div>
+            <div class="section-image image" style="background-image: url('images/Artboard 1-mid.png');"></div>
+        </section>
+        <section id="section-contact" class="section">
+            <div class="section-inner">
+                <h2 class="section-heading">Get In Touch!</h2>
+                <form id="form" action="">
+                    <div class="form-row">
+                        <label for="form-name" class="input-label">Your Name</label>
+                        <input name="name" id="form-name" type="text" class="input">
+                    </div>
+                    <div class="form-row">
+                        <label for="form-email" class="input-label">Your E-Mail Address</label>
+                        <input name="email" id="form-email" type="email" class="input">
+                    </div>
+                    <div class="form-row">
+                        <label for="form-message" class="input-label">Your Message</label>
+                        <textarea name="message" id="form-message" class="input"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" id="form-submit" class="button button-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div id="footer-inner">
+            <div class="image" style="background-image: url('images/Asset 3.png');"></div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
