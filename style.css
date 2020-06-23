@@ -391,6 +391,10 @@ body.show-nav #header-nav {
     font-size: 1.5rem;
 }
 
+#mapid { 
+    height: 400px; 
+}
+
 #section-about {}
 
 #section-about > .section-image {

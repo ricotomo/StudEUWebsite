@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Abroad</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <script src="leaflet-0.7.2/leaflet.ajax.min.js"></script>
 </head>
 <body>
     <header id="header">
@@ -97,6 +100,24 @@
             </div>
             <div class="section-image image" style="background-image: url('images/Artboard 1-mid.png');"></div>
         </section>
+
+        <section>
+            <h2 class="section-heading">Map</h2>
+                    <div id="mapid">
+                        <script>
+                            var mymap = L.map('mapid').setView([50.110924, 8.682127], 4);
+                            
+                            L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+                            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                            maxZoom: 18,
+                            id: 'mapbox/streets-v11',
+                            tileSize: 512,
+                            zoomOffset: -1,
+                            accessToken: 'pk.eyJ1Ijoicmljb3RvbW8iLCJhIjoiY2ticjVkd3Z2MnRkaDJwcW5kZDA5ZGxrayJ9.VEEG5vLease__kWQBZayxw'
+                            }).addTo(mymap);
+                        </script>
+        </section>
+
         <section id="section-contact" class="section">
             <div class="section-inner">
                 <h2 class="section-heading">Get In Touch!</h2>
