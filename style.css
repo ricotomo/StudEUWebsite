@@ -309,15 +309,16 @@ p2{
 
 #header {
     background-color: var(--color-background-header);
-    border-bottom: 1px solid rgba(0, 0, 0, 1);
     display: flex;
-    height: 56px;
+    height: 65px;
     justify-content: center;
+    vertical-align: middle;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1;
-}
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    }
 
 #header-inner {
     align-items: center;
@@ -330,12 +331,16 @@ p2{
 }
 
 #header-logo {
+    padding-top: 5px;
     display: block;
-    height: 56px;
-}
+    width: 121px;
+    height: 171px;
+    }
 
 #header-logo > img {
-    height: 56px;
+    width: 121px;
+    height: 171px;
+
 }
 
 #header-nav {
