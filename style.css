@@ -4,10 +4,10 @@
     /* Body */
     --color-background-body: #FFFFFF;
 
-    --color-font-body: rgba(0, 0, 0, 0.8);
+    --color-font-body: #2D4454;
     --color-font-link: #583D9E;
     
-    --font-body: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --font-body: 'Franklin Gothic Medium', 'Franklin Gothic Book', Arial, sans-serif;
 
     /* General */
     --color-border: rgba(0, 0, 0, 0.1);
@@ -78,6 +78,57 @@ a:hover {
 
 button {
     cursor: pointer;
+}
+
+h1 {
+    font-family: Franklin Gothic Medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 140.62%;
+    /* or 101px */
+    color: #2D4454;
+    opacity: 0.7;
+}
+h2 {
+    font-family: Franklin Gothic Medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 140.62%;
+    /* or 39px */
+    color: #2D4454;
+    opacity: 0.7;
+}
+h3 {
+    font-family: Franklin Gothic Medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 140.62%;
+    /* or 101px */
+    color: #2D4454;
+    opacity: 0.7;
+}
+p1 {
+    font-family: Franklin Gothic Book;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140.62%;
+    /* identical to box height, or 25px */
+    color: #2D4454;
+    opacity: 0.7;
+}
+p2{
+    font-family: Franklin Gothic Book;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 140.62%;
+    /* or 28px */
+    color: #2D4454;
+    opacity: 0.7;
 }
 
 /* Components */
