@@ -44,11 +44,33 @@
     </header>
     <main id="content">
         <section id="section-about" class="section">
-                <div id="background-picture"></div>
-                <div class="section-inner">
-                    <div class="section-heading"><h3>Welcome to <span style="color: #583D9E;">StudeEU</span></h3></div>
+                <div id="background-picture">
+                
+                    <div class="section-heading"><h3 style="margin-bottom: 0px;">Welcome to <span style="color: #583D9E;">StudEU</span></h3></div>
                     <h2>Education can be an adventure</h2>
+                    <button class="button button-primary center" style="align-items: center; ">Learn How</button>
                 </div>
+        </section>
+        <section id="section-intro" class="section">
+            <div class="section-inner">
+                <h2 class="section-heading" style ="color:#583D9E;">Studying in Europe</h2>
+                <h1>is an option for everyone</h1>
+                <p2 class="middle-panel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus enim sit amet ante tempus malesuada. Aliquam nec lacus a ipsum iaculis varius. Vivamus sagittis arcu at ante pulvinar, vitae luctus lacus fringilla. Quisque dictum fringilla libero, id fermentum odio iaculis in. Donec malesuada, erat non fringilla commodo, augue diam pellentesque tellus, vel scelerisque lorem nunc sit amet quam. Sed convallis cursus semper. Nam eget aliquam velit, at vulputate ligula. Duis molestie ut ligula eget elementum. Proin at arcu vel augue convallis feugiat sit amet id magna. Aliquam erat volutpat. Quisque auctor elementum fringilla.
+                </p2>
+                <div id="mapid">
+                    <script>
+                        var mymap = L.map('mapid').setView([50.110924, 8.682127], 3);
+                        
+                        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+                        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                        maxZoom: 18,
+                        id: 'mapbox/streets-v11',
+                        tileSize: 512,
+                        zoomOffset: -1,
+                        accessToken: 'pk.eyJ1Ijoicmljb3RvbW8iLCJhIjoiY2ticjVkd3Z2MnRkaDJwcW5kZDA5ZGxrayJ9.VEEG5vLease__kWQBZayxw'
+                        }).addTo(mymap);
+                    </script>
+            </div>
         </section>
         <section id="section-why" class="section">
             <div class="section-inner">
@@ -103,24 +125,6 @@
             </div>
             <div class="section-image image" style="background-image: url('images/Artboard 1-mid.png');"></div>
         </section>
-
-        <section>
-            <h2 class="section-heading">Map</h2>
-                    <div id="mapid">
-                        <script>
-                            var mymap = L.map('mapid').setView([50.110924, 8.682127], 4);
-                            
-                            L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-                            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-                            maxZoom: 18,
-                            id: 'mapbox/streets-v11',
-                            tileSize: 512,
-                            zoomOffset: -1,
-                            accessToken: 'pk.eyJ1Ijoicmljb3RvbW8iLCJhIjoiY2ticjVkd3Z2MnRkaDJwcW5kZDA5ZGxrayJ9.VEEG5vLease__kWQBZayxw'
-                            }).addTo(mymap);
-                        </script>
-        </section>
-
         <section id="section-contact" class="section">
             <div class="section-inner">
                 <h2 class="section-heading">Get In Touch!</h2>
