@@ -558,7 +558,11 @@ body.show-nav #header-nav {
 #mapid { 
     height: 400px; 
 }
-
+#person-image{
+    width:50%;
+    height:100%;
+    object-fit:cover;
+  }
 #section-about {
     text-align: center;
     align-items: center;
