@@ -32,7 +32,7 @@
 
     /* Sections */
     --color-background-section-why: #D1D1F5;
-    --color-background-section-services: #F3DFC1;
+    --color-background-section-services: #FFFFFF;
     --color-background-section-countries: #FAFAFA;
 
     /* Footer */
@@ -169,6 +169,9 @@ p2{
 .icon-button {
     padding: 0;
     width: 48px;
+}
+.purple-text {
+    color: #583D9E;
 }
 
 .input {
@@ -560,6 +563,7 @@ body.show-nav #header-nav {
     height:100%;
     object-fit:cover;
   }
+
 #section-about {
     text-align: center;
     align-items: center;
@@ -632,6 +636,13 @@ body.show-nav #header-nav {
     content: counter(services)".";
     margin-right: 8px;
     margin-left: 48px;
+  }
+
+ #service-image{
+    width:90%;
+    height:30%;
+    object-fit:cover;
+    
   }
 
 #form {
