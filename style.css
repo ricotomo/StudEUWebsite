@@ -36,6 +36,7 @@
     --color-background-section-countries: #FAFAFA;
     --color-background-section-about: #583D9E;
     --color-background-section-about-people: #F2F2F2;
+    --color-background-section-contact:#F2F2F2;
     /* Footer */
     --color-background-footer: #ffffff;
 }
@@ -584,6 +585,11 @@ body.show-nav #header-nav {
     background: var(--color-background-section-about);
 }
 
+#section-blog {
+    text-align: center;
+    align-items: center;
+}
+
 #section-about > .section-image {
     height: 256px;
 }
@@ -592,6 +598,10 @@ body.show-nav #header-nav {
     text-align: center;
     align-items: center;
     background: var(--color-background-section-about-people);
+}
+
+#section-contact{
+    background-color: var(--color-background-section-contact);
 }
 
 #section-explanation {
