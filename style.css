@@ -519,6 +519,19 @@ body.show-nav #header-nav {
     text-align: center;
     
   }
+
+.person-img{
+    width: 100%;
+    max-width: 124px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #583D9E;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .section {
     align-items: center;
     display: flex;
@@ -574,6 +587,13 @@ body.show-nav #header-nav {
 #section-about > .section-image {
     height: 256px;
 }
+
+#section-about-people {
+    text-align: center;
+    align-items: center;
+    background: var(--color-background-section-about-people);
+}
+
 #section-explanation {
     text-align: center;
     align-items: center;
@@ -584,10 +604,9 @@ body.show-nav #header-nav {
     height: 256px;
 }
 
-#section-about-people {
+#section-intro {
     text-align: center;
     align-items: center;
-    background: var(--color-background-section-about-people);
 }
 
 #section-why {
