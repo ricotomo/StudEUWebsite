@@ -59,6 +59,10 @@
     outline: none;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: var(--color-background-body);
     display: flex;
@@ -186,7 +190,7 @@ p2{
 }
 
 .input-label {
-    font-size: 1.2rem;
+    font-size: 1rem;
     width: 100%;
 }
 .middle-panel {
@@ -713,12 +717,12 @@ body.show-nav #header-nav {
     align-items: center;
     display: flex;
     flex-flow: column nowrap;
-    margin-bottom: 16px;
+    margin-bottom: .1rem;
     width: 100%;
 }
 
 #form-message {
-    min-height: 256px;
+    min-height: 175px;
     resize: vertical;
 }
 
