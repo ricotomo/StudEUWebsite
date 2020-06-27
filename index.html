@@ -266,17 +266,30 @@
             <div class="section-image image" style="background-image: url('images/Artboard 1-mid.png');"></div>
         </section>
         -->
-        <section id="section-contact" class="section">
-            <div class="section-inner">
-                <h2 class="section-heading">Get In Touch!</h2>
-                <form id="form" action="">
+        <section id="section-contact" class="flex-grid">
+            <div class="flex-col" style="align-self:flex-start; padding-right: 5rem;">
+                <h2>Contact Us</h2>
+                <h1>Reach out to us for a free consultation. We are happy to share details of our service, pricing and talk about your requirements.</h1>
+                <h1>info@study-in-the.eu <br>
+                    610-203-1419</h1>
+            </div>
+            <div class="flex-col">
+                    <form id="form" action="">
                     <div class="form-row">
                         <label for="form-name" class="input-label">Your Name</label>
                         <input name="name" id="form-name" type="text" class="input">
                     </div>
                     <div class="form-row">
-                        <label for="form-email" class="input-label">Your E-Mail Address</label>
-                        <input name="email" id="form-email" type="email" class="input">
+                        <div class = "flex-grid" style="justify-content: space-between;">
+                                <div class="flex-col"  style="padding-right: 1rem; margin-left: -1rem;">
+                                    <label for="form-email" class="input-label">Your E-Mail</label>
+                                    <input name="email" id="form-email" type="email" class="input">
+                                </div>
+                                <div class="flex-col" style="margin-right: -1rem;">
+                                    <label for="form-email" class="input-label">Your Phone</label>
+                                    <input name="phone" id="form-phone" class="input">
+                                </div>
+                        </div>
                     </div>
                     <div class="form-row">
                         <label for="form-message" class="input-label">Your Message</label>
@@ -291,7 +304,7 @@
     </main>
     <footer id="footer">
         <div id="footer-inner">
-            <div class="image" style="background-image: url('images/Asset 3.png');"></div>
+            <img src="images/coffee-mug.png" id="footer-picture">
             <p1>© 2020 - StudEU LLC</p1>
         </div>
     </footer>
