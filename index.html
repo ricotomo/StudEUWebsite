@@ -55,8 +55,7 @@
             <div class="section-inner">
                 <h2 class="section-heading" style ="color:#583D9E;">Studying in Europe</h2>
                 <h1>is an option for everyone</h1>
-                <p2 class="middle-panel">Most people don’t realize that you do not need to be a citizen of a European country to study full-time in the EU. As an American Europe is wide open to you! In many EU countries the population is shrinking and they need more well educated people to fuel economic growth - which is why Europe has put out the welcome mat for foreign students. There are thousands of Bachelors and Masters programs in English. 51% of Europeans speak English. You do not need to speak a foreign language. Education is supported by the government so it is often times much cheaper than in the USA. The academic quality of European universities are world class.
-                </p2>
+                <p2 class="middle-panel">Most people don’t realize that you do not need to be a citizen of a European country to study full-time in the EU. As an American Europe is wide open to you! In many EU countries the population is shrinking and they need more well educated people to fuel economic growth - which is why Europe has put out the welcome mat for foreign students. There are thousands of Bachelors and Masters programs in English. 51% of Europeans speak English. You do not need to speak a foreign language. Education is supported by the government so it is often times much cheaper than in the USA. The academic quality of European universities are world class.</p2>
                 <div id="mapid">
                     <script>
                         var mymap = L.map('mapid').setView([50.110924, 8.682127], 3);
@@ -71,25 +70,26 @@
                         }).addTo(mymap);
                     </script>
             </div>
+            
         </section>
-        <section id="section-why" class="flex-grid">
+            <section id="section-why" class="flex-grid">
                 <div class="flex-col">
                 </div>
                 <div class="flex-col">
-                    <h2 style="margin-bottom:-1rem;" class="purple-text"> 5 Reasons to Study in Europe</h2>
-                        <div class="flex-grid" style="margin-bottom:-5rem;">
-                            <div class="flex-col">
-                                <h1>I'm a student</h1>
+                        <h2 style="margin-bottom:-1rem;" class="purple-text"> 5 Reasons to Study in Europe</h2>
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <h1>I'm a parent</h1>                                
                             </div>
-                            <div class="flex-col">
-                                    <label class="switch">
+                            <div class="grid-item">
+                                <label class="switch">
                                     <input type="checkbox">
                                     <span class="switch-slider round"></span>
-                                </label>
+                                </label> 
                             </div>
-                            <div class="flex-col">
-                                <h1>I'm a parent</h1>
-                            </div>
+                            <div class="grid-item">
+                                <h1>I'm a student</h1>
+                            </div>                                                     
                         </div>
                         <div class="flex-grid" style="margin-bottom:-10rem;">
                             <div class="flex-col">
@@ -231,7 +231,9 @@
         <a name="blog"></a>
         <section id="section-blog" class="section">
             <h2 class="purple-text">Blog</h2>
-            <h1> Read all stories on Medium → </h1>
+            <a href="https://medium.com">
+                <h1> Read all  our stories on Medium → </h1>
+            </a>
             <div id="medium-widget"></div>
             <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
             <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@philippsandner","postsPerLine":3,"limit":3,"picture":"small","fields":["author","publishAt"],"ratio":"landscape"}})</script>
