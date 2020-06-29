@@ -202,6 +202,19 @@ p2{
     width: 100%;
 }
 
+.reasons-list-number{
+    font-family: Franklin Gothic Medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 140.62%;
+    color: #583D9E;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
 .input-label {
     font-size: 1rem;
     width: 100%;
@@ -226,28 +239,7 @@ p2{
     min-height: 128px;
     min-width: 128px;
 }
-/*
-.overlay{
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-}
 
-.overlay-container {
-    position: relative;
-  }
-
-  .overlay-container:hover .overlay {
-    bottom: 0;
-    height: 100%;
-  }
-  */
 
 .slider {
     display: flex;
@@ -419,37 +411,7 @@ input:checked + .switch-slider {
 .tabs.student .tab-parent {
     display: none;
 }
-
-#info-box {
-    display: none;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-    background-color: #ffffff;
-    border: 2px solid #BF0A30;
-    border-radius: 5px;
-    padding: 5px;
-    font-family: arial;
-  }
-
-/* Styling for embedded SVG */
-#Europe-map{
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-}
-path:hover, circle:hover {
-    stroke: #002868 !important;
-    stroke-width:2px;
-    stroke-linejoin: round;
-    fill: #002868 !important;
-    cursor: pointer;
-  }
-  
+ 
 
 /* Layout */
 
@@ -588,8 +550,16 @@ body.show-nav #header-nav {
 .flex-col {
     flex: 1;
     text-align: center;
-    
+   
   }
+.flex-col-numbers{
+    height:90px;
+}
+
+.flex-col-reasons{
+    height:90px;
+    flex-grow: 3;
+}
 
 #footer-picture{
     max-width: 100%;
@@ -671,6 +641,7 @@ body.show-nav #header-nav {
 #section-blog {
     text-align: center;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 #section-about > .section-image {
@@ -748,25 +719,8 @@ body.show-nav #header-nav {
 #section-services {
     color: #fff;
     background: var(--color-background-section-services);
+    margin-bottom: 5rem;
 }
-
-#section-services .section-inner {
-    max-width: 720px;
-}
-
-#section-services-list {
-    counter-reset: services;
-    list-style-type: '➔';
-    font-size: 2rem;
-    line-height: 4rem;
-}
-
-#section-services-list li::before {
-    counter-increment: services;
-    content: counter(services)".";
-    margin-right: 8px;
-    margin-left: 48px;
-  }
 
  #service-image{
     width:90%;
