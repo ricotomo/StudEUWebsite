@@ -57,6 +57,7 @@ function changeText() {
         document.getElementById("reason5").innerHTML = "hello world 5";
     }
   }
+
   /**https://websitebeaver.com/how-to-make-an-interactive-and-responsive-svg-map-of-us-states-capitals#styling-the-states
   $("path, circle").hover(function(e) {
     $('#info-box').css('display','block');
@@ -112,3 +113,4 @@ function changeText() {
               });
           });
   */
+
