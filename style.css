@@ -616,7 +616,7 @@ body.show-nav #header-nav {
 }
 
 #mapid { 
-    height: 400px; 
+    
 }
 
 #medium-widget{
@@ -662,9 +662,7 @@ body.show-nav #header-nav {
 
 }
 
-#section-explanation > .section-image{
-    height: 256px;
-}
+
 
 #section-intro {
     text-align: center;
