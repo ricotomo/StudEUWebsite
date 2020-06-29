@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Abroad</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
-    <script src="leaflet-0.7.2/leaflet.ajax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
 </head>
 <body>
     <header id="header">
@@ -50,26 +53,26 @@
                     </a>
                 </div>
         </section>
+        
         <a name="studying-in-Europe"></a>
-        <section id="section-explanation" class="section">
-            <div class="section-inner">
+        <section  class="flex-grid" style="margin-top: 0rem; padding-top: 0rem;">
+            <div class="flex-col">
+            </div>
+            <div class="flex-col">
                 <h2 class="section-heading" style ="color:#583D9E;">Studying in Europe</h2>
                 <h1>is an option for everyone</h1>
                 <p2 class="middle-panel">Most people don’t realize that you do not need to be a citizen of a European country to study full-time in the EU. As an American Europe is wide open to you! In many EU countries the population is shrinking and they need more well educated people to fuel economic growth - which is why Europe has put out the welcome mat for foreign students. There are thousands of Bachelors and Masters programs in English. 51% of Europeans speak English. You do not need to speak a foreign language. Education is supported by the government so it is often times much cheaper than in the USA. The academic quality of European universities are world class.</p2>
+                <br> <br>
+                <p2>StudEU focus countries are:</p2>
+                <br><br>
                 <div id="mapid">
-                    <script>
-                        var mymap = L.map('mapid').setView([50.110924, 8.682127], 3);
-                        
-                        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-                        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-                        maxZoom: 18,
-                        id: 'mapbox/streets-v11',
-                        tileSize: 512,
-                        zoomOffset: -1,
-                        accessToken: 'pk.eyJ1Ijoicmljb3RvbW8iLCJhIjoiY2ticjVkd3Z2MnRkaDJwcW5kZDA5ZGxrayJ9.VEEG5vLease__kWQBZayxw'
-                        }).addTo(mymap);
-                    </script>
+                    
+                    <img src="images/EuropeMap-Highlighted.png">
+                </div>
             </div>
+            <div class="flex-col">
+            </div>
+            
             
         </section>
             <section id="section-why" class="flex-grid">
@@ -83,7 +86,7 @@
                             </div>
                             <div class="grid-item">
                                 <label class="switch">
-                                    <input type="checkbox">
+                                    <input type="checkbox" id="mySwitch" onclick="changeText()">
                                     <span class="switch-slider round"></span>
                                 </label> 
                             </div>
@@ -96,7 +99,7 @@
                                 <h3 style="color: #583D9E">1.</h3>
                             </div>
                             <div class="flex-col" style= "flex-grow: 3;">
-                                <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p2>
+                                <p2 id="reason1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p2>
                             </div>
                         </div>
                         <div class="flex-grid" style="margin-bottom:-10rem;">
@@ -104,7 +107,7 @@
                                 <h3 style="color: #583D9E">2.</h3>
                             </div>
                             <div class="flex-col" style= "flex-grow: 3;">
-                                <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p2>
+                                <p2 id="reason2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p2>
                             </div>
                         </div>
                         <div class="flex-grid" style="margin-bottom:-10rem;" >
@@ -112,7 +115,7 @@
                                 <h3 style="color: #583D9E">3.</h3>
                             </div>
                             <div class="flex-col" style= "flex-grow: 3;">
-                                <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p2>
+                                <p2 id="reason3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p2>
                             </div>
                         </div>
                         <div class="flex-grid" style="margin-bottom:-10rem;">
@@ -120,7 +123,7 @@
                                 <h3 style="color: #583D9E">4.</h3>
                             </div>
                             <div class="flex-col" style= "flex-grow: 3;">
-                                <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p2>
+                                <p2 id="reason4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p2>
                             </div>
                         </div>
                         <div class="flex-grid" >
@@ -128,7 +131,7 @@
                                 <h3 style="color: #583D9E">5.</h3>
                             </div>
                             <div class="flex-col" style= "flex-grow: 3;">
-                                <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p2>
+                                <p2 id="reason5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p2>
                             </div>
                         </div>
                         <a href="https://medium.com">
@@ -320,7 +323,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
