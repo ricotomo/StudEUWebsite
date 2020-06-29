@@ -420,6 +420,37 @@ input:checked + .switch-slider {
     display: none;
 }
 
+#info-box {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: #ffffff;
+    border: 2px solid #BF0A30;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: arial;
+  }
+
+/* Styling for embedded SVG */
+#Europe-map{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+path:hover, circle:hover {
+    stroke: #002868 !important;
+    stroke-width:2px;
+    stroke-linejoin: round;
+    fill: #002868 !important;
+    cursor: pointer;
+  }
+  
+
 /* Layout */
 
 #header {
@@ -669,6 +700,7 @@ body.show-nav #header-nav {
     align-items: center;
     margin: 0rem;
     padding: 0rem;
+
 }
 
 #section-why {
