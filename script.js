@@ -44,17 +44,17 @@ function changeText() {
     var checkBox = document.getElementById("mySwitch");
     
     if (checkBox.checked == true){
-        document.getElementById("reason1").innerHTML = "New text 1!";
-        document.getElementById("reason2").innerHTML = "New text 2!";
-        document.getElementById("reason3").innerHTML = "New text 3!";
-        document.getElementById("reason4").innerHTML = "New text 4!";
-        document.getElementById("reason5").innerHTML = "New text 5!"; 
+        document.getElementById("reason1").innerHTML = "<b>Culture</b> - By studying in Europe you'll get to truly experience first hand the epic history, delicious food, awestriking art and everything which makes Europe special. It's different but also familiar.";
+        document.getElementById("reason2").innerHTML = "<b>Travel</b> -Take advantage of Europes excellent public transport and budget airlines to cruise the canals of Venice, admire the art of the Louvre, have a beer at Oktoberfest, or whatever else is on your bucket list!";
+        document.getElementById("reason3").innerHTML = "<b>Education Style</b> - In European universities you usually don't get homework and there are no quizes. How does that sound?! Classes are smaller and familiar leading to lifelong friendships between classmates ";
+        document.getElementById("reason4").innerHTML = "<b> Partying</b> - Europe's drinking laws are much less restrictive than in the USA. Clubs and bars are open to anyone 18+ (even 16 in many countries).";
+        document.getElementById("reason5").innerHTML = "<b>Independence</b> - European universities don't baby their students. If you're 18 you're an adult. That means no RA's, shared dorms, meal plans, attendance, etc - of course this come with much more responsibility."; 
     } else {
-        document.getElementById("reason1").innerHTML = "hello world 1";
-        document.getElementById("reason2").innerHTML = "hello world 2";
-        document.getElementById("reason3").innerHTML = "hello world 3";
-        document.getElementById("reason4").innerHTML = "hello world 4";
-        document.getElementById("reason5").innerHTML = "hello world 5";
+        document.getElementById("reason1").innerHTML = "<b>Fast</b> - A bachelor's degree in Europe only takes 3 years, and is internationally recognized. Get a head start on a career.";
+        document.getElementById("reason2").innerHTML = "<b>Competitive Boost</b> - Europe offers excellent academic and career opportunities. Becuase of a shrinking and aging population Europe is in need of foreigners. This gives you an extra boost in getting prestigious positions.";
+        document.getElementById("reason3").innerHTML = "<b>Value</b> - European university is much cheaper than in the USA. In many countries there is no tuition fee. The cost of living is also cheaper (with a few exceptions in Scandanavia).";
+        document.getElementById("reason4").innerHTML = "<b>Diversity</b> - Expose your child to a diversity of culture. Experiencing new languages, places, and people is garaunteed to broaden horizons.";
+        document.getElementById("reason5").innerHTML = "<b>Language</b> - Learning to speak a second language can open a world of new possibilites.";
     }
   }
 
