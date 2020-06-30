@@ -164,6 +164,7 @@ p2{
     margin: 4px;
     padding: 0 16px;
 }
+
 .button:hover {
     background-color: var(--color-background-button-hover);
 }
@@ -171,6 +172,12 @@ p2{
 .button-primary {
     background: var(--color-background-button-primary);
     color: var(--color-font-button-primary);
+}
+
+@media screen and (max-width: 720px) {
+    .button-primary{
+        display: none;
+    }
 }
 
 .button-secondary {
@@ -545,12 +552,18 @@ body.show-nav #header-nav {
   align-items: center;
   padding: 16px;
   position: relative;
+  flex-flow: row wrap;
   width: 100%;
 }
+@media screen and (max-width: 720px) {
+    .flex-grid{
+        flex-direction: column;
+    }
+}
+
 .flex-col {
     flex: 1;
-    text-align: center;
-   
+    text-align: center;  
   }
 .flex-col-numbers{
     height:100px;
