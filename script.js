@@ -14,6 +14,7 @@ $(document).ready(function() {
 
     $('#header-nav').click((e) => {
         e.stopPropagation();
+        $body.removeClass('show-nav');
     });
     
     $('#header-nav-open').click((e) => {
@@ -34,9 +35,15 @@ $(document).ready(function() {
 
     $('#form').submit((e) => {
         e.preventDefault();
+        
         // Form Submit Handler
     });
 });
+
+function prefillExplore(){
+   document.getElementById('form-message').innerHTML = "Hi, I'm interested in your explore service. Please get in touch with me so we can discuss my possibilities for studying in Europe. ";
+    
+}
 
 // function to change the 5 reasons for studying in Euorpe depending on how the toggle switch is set (parent or student)
 function changeText() {
@@ -58,6 +65,44 @@ function changeText() {
     }
   }
 
+  function showMessage(){
+    var x = document.getElementById("sent-message");
+     if (x.style.display === "none") {
+         x.style.display = "block";
+     } else {
+         x.style.display = "none";
+     }
+     }
+function blog(){
+    console.log(x);
+    
+     if (x.matches) {
+         MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@philippsandner","postsPerLine":1,"limit":3,"picture":"small","fields":["author","publishAt"],"ratio":"landscape"}});
+         
+     } else {
+         MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@philippsandner","postsPerLine":3,"limit":3,"picture":"small","fields":["author","publishAt"],"ratio":"landscape"}});
+     }
+    }
+    
+    var x = window.matchMedia("(max-width: 720px)");
+    
+    blog(x);
+    x.addListener(blog);
+
+ /**function medium(x) {
+    if (x.matches) { // If media query matches
+        document.getElementById("reason1").innerHTML = <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+        <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@philippsandner","postsPerLine":3,"limit":3,"picture":"small","fields":["author","publishAt"],"ratio":"landscape"}})</script>;
+    } else {
+      document.body.style.backgroundColor = "pink";
+    }
+  }
+  
+  var x = window.matchMedia("(max-width: 720px)")
+  medium(x) // Call listener function at run time
+  x.addListener(medium) // Attach listener function on state changes
+
+**/
   /**https://websitebeaver.com/how-to-make-an-interactive-and-responsive-svg-map-of-us-states-capitals#styling-the-states
   $("path, circle").hover(function(e) {
     $('#info-box').css('display','block');
