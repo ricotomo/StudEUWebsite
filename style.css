@@ -544,7 +544,7 @@ body.show-nav #header-nav {
   align-items: center;
 }
 #sent-message{
-    display:none;
+    
 }
 #content {
     width: 100%;
@@ -555,12 +555,10 @@ body.show-nav #header-nav {
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
   align-content: flex-start;
   align-items: center;
   padding: 16px;
   position: relative;
-  flex-flow: row wrap;
   width: 100%;
 }
 @media screen and (max-width: 720px) {
@@ -578,14 +576,14 @@ body.show-nav #header-nav {
 }
 
 .flex-col-reasons{
-    
+
     text-align: left;
     flex-grow: 3;
     margin-bottom: .5rem;
 }
 
 .flex-col-half{
-    width: 45%
+    margin-bottom: .2rem;
 }
 @media screen and (max-width: 720px) {
     .flex-col-half{
@@ -799,13 +797,15 @@ body.show-nav #header-nav {
 .form-row {
     align-items: center;
     display: flex;
-    flex-flow: column nowrap;
-    margin-bottom: .1rem;
-    width: 100%;
+    flex-flow: column wrap;
+    margin-bottom: .2rem;
+    width:100%;
+    
 }
 
 #form-message {
     min-height: 175px;
+    min-width: 300px;
     resize: vertical;
 }
 

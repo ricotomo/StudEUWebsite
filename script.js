@@ -65,17 +65,18 @@ function changeText() {
     }
   }
 
-  function showMessage(){
-    var x = document.getElementById("sent-message");
-     if (x.style.display === "none") {
-         x.style.display = "block";
-     } else {
-         x.style.display = "none";
+function showMessage(){
+    document.getElementById("sent-message").innerHTML = "Thanks, your message has been sent!";
+    setTimeout(unshowMessage, 1000);
      }
-     }
+
+function unshowMessage(){
+    document.getElementById("sent-message").innerHTML = "";
+}
+     
 function blog(){
     console.log(x);
-    
+
      if (x.matches) {
          MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@philippsandner","postsPerLine":1,"limit":3,"picture":"small","fields":["author","publishAt"],"ratio":"landscape"}});
          
