@@ -157,7 +157,7 @@
                             We will put together a list of study programs in Europe, tailored to your wishes including all the details you need to make a decision.
                         </p1>
                         <br><br>
-                        <a href="#contact" ><p1 class="purple-text" onclick="prefillExplore()"><b>Get in touch!→</b></p1></a>
+                        <a href="#contact" id="explore-service-link"><p1 class="purple-text"><b>Get in touch!→</b></p1></a>
                     </div>
                     <div class="flex-col" style="align-self: flex-start; margin-bottom: 1.5rem;">
                         <img src="images/Service-Apply.png" id="service-image">
@@ -298,8 +298,9 @@
                 <a href="tel:610-203-1419">
                 <h1>610-203-1419</h1></a>
             </div>
+
             <div class="flex-col" style="padding:0rem;">
-                    <form id="form" action="https://formsubmit.co/friedicecream1@gmail.com" method="POST">
+                    <form id="form" onsubmit="submitToAPI(event)">
                     <div class="form-row">
                         <input name="name" id="form-name" type="text" class="input" placeholder="Your Name">
                     </div>
@@ -317,10 +318,10 @@
                         <textarea name="message" id="form-message" class="input" placeholder="Your Message"></textarea>
                     </div>
                     <div class="form-row">
-                        <button type="submit" id="form-submit" class="button button-send" onclick="showMessage()">Submit</button>
+                        <button type="submit" id="form-submit" class="button button-send">Submit</button>
                     </div>
-                    <div id="sent-message"></div>
                 </form>
+                <div id="sent-message"></div>
             </div>
         </section>
     </main>
