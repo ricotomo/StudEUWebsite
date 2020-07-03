@@ -40,10 +40,16 @@ $(document).ready(function() {
     });
 });
 
-function prefillExplore(){
-   document.getElementById('form-message').innerHTML = "Hi, I'm interested in your explore service. Please get in touch with me so we can discuss my possibilities for studying in Europe. ";
+function prefillPhone(){
+   document.getElementById('form-phone').innerHTML = "123456789";
     
 }
+
+$('#explore-service-link').click( function() { 
+    document.getElementById("form-message").value = "test";
+    document.getElementById('form-phone').value = "123456789";
+    return false; 
+} );
 
 // function to change the 5 reasons for studying in Euorpe depending on how the toggle switch is set (parent or student)
 function changeText() {
@@ -89,6 +95,69 @@ function blog(){
     
     blog(x);
     x.addListener(blog);
+
+    function submitToAPI(e) {
+        console.log("start-submit");
+        e.preventDefault();
+        var URL = "https://8yq7hi2oli.execute-api.us-east-2.amazonaws.com/Alpha/contact";
+ 
+             /**var Namere = /[A-Za-z]{1}[A-Za-z]/;
+             if (!Namere.test($("#form-name").val())) {
+                          alert ("Name can not less than 2 char");
+                 return;
+             }
+             var mobilere = /[0-9]{10}/;
+             if (!mobilere.test($("#form-phone").val())) {
+                 alert ("Please enter valid mobile number");
+                 return;
+             }
+             if ($("#form-email").val()=="") {
+                 alert ("Please enter your email id");
+                 return;
+             }
+ 
+             var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+             if (!reeamil.test($("#email-input").val())) {
+                 alert ("Please enter valid email address");
+                 return;
+             } **/
+ 
+        var name = $("#form-name").val();
+        var phone = $("#form-phone").val();
+        var email = $("#form-email").val();
+        var desc = $("#form-message").val();
+        var data = {
+           name : name,
+           phone : phone,
+           email : email,
+           desc : desc
+         };
+ 
+        $.ajax({
+          type: "POST",
+          url : "https://8yq7hi2oli.execute-api.us-east-2.amazonaws.com/Alpha/contact",
+          dataType: "json",
+          crossDomain: "true",
+          contentType: "application/json; charset=utf-8",
+          data: JSON.stringify(data),
+ 
+          
+          success: function () {
+            // clear form and show a success message
+            alert("Successful");
+            document.getElementById("sent-message").innerHTML = "Thanks, your message has been sent!";
+            setTimeout(unshowMessage, 1000);
+            document.getElementById("form").reset();
+            location.reload();
+          },
+          error: function () {
+            // show an error message
+            document.getElementById("sent-message").innerHTML = "Oops there was a problem. Try again or get in touch by email!";
+            setTimeout(unshowMessage, 4000);
+          }});
+      }
+
+/**https://8yq7hi2oli.execute-api.us-east-2.amazonaws.com/Alpha */
 
  /**function medium(x) {
     if (x.matches) { // If media query matches
