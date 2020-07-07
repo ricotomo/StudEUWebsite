@@ -692,6 +692,9 @@ body.show-nav #header-nav {
     display: inline-block;
     text-align: left;
     vertical-align: middle;
+    align-self:center;
+    align-items: center;
+    align-content: center;
 }
 
 #person-image{
