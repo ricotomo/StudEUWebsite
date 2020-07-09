@@ -698,7 +698,8 @@ body.show-nav #header-nav {
 }
 
 #mapid { 
-    
+    width: 90%;
+    height: auto;
 }
 
 #medium-widget{
