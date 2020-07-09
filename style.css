@@ -8,6 +8,7 @@
     --color-font-link: #583D9E;
     
     --font-body: 'Franklin Gothic Medium', 'Franklin Gothic Book', Arial, sans-serif;
+    
 
     /* General */
     --color-border: rgba(0, 0, 0, 0.1);
@@ -41,6 +42,8 @@
     --color-background-footer: #ffffff;
 }
 
+
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     :root {
@@ -48,6 +51,13 @@
 }
 
 /* Setup */
+@import url(//db.onlinewebfonts.com/c/e130d119682ecb567748343bf7f263b0?family=Franklin+Gothic+Book);
+@import url(//db.onlinewebfonts.com/c/a8d23046bc8d38ee78b38e95ec47f9e5?family=Franklin+Gothic+Medium);
+@import url(//db.onlinewebfonts.com/c/082252176f1f4953cea2a7e5e9f300f4?family=Franklin+Gothic+Demi);
+@font-face {font-family: "Franklin Gothic Book"; src: url("//db.onlinewebfonts.com/t/e130d119682ecb567748343bf7f263b0.eot"); src: url("//db.onlinewebfonts.com/t/e130d119682ecb567748343bf7f263b0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e130d119682ecb567748343bf7f263b0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e130d119682ecb567748343bf7f263b0.woff") format("woff"), url("//db.onlinewebfonts.com/t/e130d119682ecb567748343bf7f263b0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e130d119682ecb567748343bf7f263b0.svg#Franklin Gothic Book") format("svg"); }
+@font-face {font-family: "Franklin Gothic Medium"; src: url("//db.onlinewebfonts.com/t/a8d23046bc8d38ee78b38e95ec47f9e5.eot"); src: url("//db.onlinewebfonts.com/t/a8d23046bc8d38ee78b38e95ec47f9e5.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a8d23046bc8d38ee78b38e95ec47f9e5.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a8d23046bc8d38ee78b38e95ec47f9e5.woff") format("woff"), url("//db.onlinewebfonts.com/t/a8d23046bc8d38ee78b38e95ec47f9e5.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a8d23046bc8d38ee78b38e95ec47f9e5.svg#Franklin Gothic Medium") format("svg"); }
+@font-face {font-family: "Franklin Gothic Book"; src: url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.eot"); src: url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.woff") format("woff"), url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.svg#Franklin Gothic Demi") format("svg"); font-weight: bold; }
+@font-face {font-family: "Franklin Gothic Medium"; src: url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.eot"); src: url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.woff") format("woff"), url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.svg#Franklin Gothic Demi") format("svg"); font-weight: bold; }
 
 * {
     -webkit-tap-highlight-color: transparent;
@@ -59,8 +69,10 @@
     outline: none;
 }
 
+
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
 body {
@@ -71,6 +83,7 @@ body {
     margin: 0;
     color: var(--color-font-body);
     font-family: var(--font-body);
+    overflow-x: hidden;
 }
 
 a {
