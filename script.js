@@ -40,16 +40,21 @@ $(document).ready(function() {
     });
 });
 
-function prefillPhone(){
-   document.getElementById('form-phone').innerHTML = "123456789";
-    
+// function to prefill the contact form if someone clicks on a particular service
+function prefillMessage(x){
+    if (x === 'explore'){
+        document.getElementById("form-message").value = "I would like to find out more about what educational opportunities exist for me in Europe. Please get in touch!";  
+    } else if (x === 'apply') {
+        document.getElementById("form-message").value = "I want to go study in Europe, and I've already found the perfect program! I want your help to get accepted. Please get in touch! .";
+    } else if (x === 'relocate'){
+        document.getElementById("form-message").value = "I found th eperfect study program in Europe, and have been accepted. I'm really excited to go! Now I need help planning my move. Please get in touch! ";
+    } else {
+        document.getElementById("form-message").value = "I am interested in your services. Please get in touch!";
+    }
 }
 
-$('#explore-service-link').click( function() { 
-    document.getElementById("form-message").value = "test";
-    document.getElementById('form-phone').value = "123456789";
-    return false; 
-} );
+
+
 
 // function to change the 5 reasons for studying in Euorpe depending on how the toggle switch is set (parent or student)
 function changeText() {
@@ -71,6 +76,8 @@ function changeText() {
     }
   }
 
+
+// function to let people know if the contact form has been submitted or not
 function showMessage(){
     document.getElementById("sent-message").innerHTML = "Thanks, your message has been sent!";
     setTimeout(unshowMessage, 1000);
@@ -79,7 +86,8 @@ function showMessage(){
 function unshowMessage(){
     document.getElementById("sent-message").innerHTML = "";
 }
-     
+
+// function to load blog articles form medium in horizontal or vertical layout based on media size 
 function blog(){
     console.log(x);
 
@@ -96,6 +104,7 @@ function blog(){
     blog(x);
     x.addListener(blog);
 
+    // function to submit contact form to AWS API and send mail to StudEU via Lamda function
     function submitToAPI(e) {
         console.log("start-submit");
         e.preventDefault();
@@ -155,76 +164,3 @@ function blog(){
             setTimeout(unshowMessage, 4000);
           }});
       }
-
-/**https://8yq7hi2oli.execute-api.us-east-2.amazonaws.com/Alpha */
-
- /**function medium(x) {
-    if (x.matches) { // If media query matches
-        document.getElementById("reason1").innerHTML = <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-        <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@philippsandner","postsPerLine":3,"limit":3,"picture":"small","fields":["author","publishAt"],"ratio":"landscape"}})</script>;
-    } else {
-      document.body.style.backgroundColor = "pink";
-    }
-  }
-  
-  var x = window.matchMedia("(max-width: 720px)")
-  medium(x) // Call listener function at run time
-  x.addListener(medium) // Attach listener function on state changes
-
-**/
-  /**https://websitebeaver.com/how-to-make-an-interactive-and-responsive-svg-map-of-us-states-capitals#styling-the-states
-  $("path, circle").hover(function(e) {
-    $('#info-box').css('display','block');
-    $('#info-box').html($(this).data('info'));
-  });
-  
-  $("path, circle").mouseleave(function(e) {
-    $('#info-box').css('display','none');
-  });
-  
-  $(document).mousemove(function(e) {
-    $('#info-box').css('top',e.pageY-$('#info-box').height()-30);
-    $('#info-box').css('left',e.pageX-($('#info-box').width())/2);
-  }).mouseover();
-   */
-  
-    /** 
-    $('.element').mousefollow({
-                            
-        html:'<p>any html content here</p>'
-      
-      });
-    */
-    /** 
-    https://freestyleacademy.rocks/Digital_Media/examples/index.php?f=Mouse_Following_Div_On_Hover 
-
-      var boxHovered, boxNumber, selector, targetedBox, adjustX, adjustY;
-      $(".popup").hide();//This hides all the pop-ups when page loads
-      $(".box").hover(function(){//This executes when you hover ON the box
-           boxHovered = $(this).attr("id");//Gets the id of the box such as "box1", "box2"
-           targetedBox = "#" + boxHovered;//creates a value of "#box1", "#box2", etc for future use
-           boxNumber = boxHovered.substr(3,5);//extracts the # from the id, such as 1, 2, 3
-           selector = "#popup"+boxNumber;//creates a value of "#popup1", "#popup2", etc for future use
-           $(selector).show();//This reveals the popup inside the hovered box
-           moveBox();//This calls on the function below to execute
-      },function(){//This executes when you hover OFF the box
-           $(selector).hide();//This hides the popup inside the hovered box
-      });
-      function moveBox(){
-          $(targetedBox).bind('mousemove',function(event){//Executes when the mouse MOVES
-              adjustX = $(this).find(".popup").outerWidth(true);//gets the width of the targeted popup
-              adjustY = $(this).find(".popup").outerHeight(true);//gets the height of the targeted popup
-              if(targetedBox == "#box1") {//example of moving popup relative to mouse
-                  adjustX = $(this).find(".popup").outerWidth(true)-12;//creates a more unique value
-                  adjustY = $(this).find(".popup").outerHeight(true)-12;
-              }
-              //event.pageY or evet.pageX = the mouse position relative to the top left of the targeted box
-              var my = event.pageY-$(this).offset().top-adjustY;//my = mouse y position with some adjustment relateive to top of box
-              var mx = event.pageX-$(this).offset().left-adjustX; //mx = mouse x position with some adjustment relateive to left of box
-              $(selector).css({//set the selected popup box coordinates near the mouse as the mouse moves
-                  "left":mx,
-                  "top":my
-              });
-          });
-  */
-
