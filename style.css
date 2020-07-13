@@ -555,7 +555,7 @@ body.show-nav #header-nav {
 @media screen and (max-width: 720px) {
     #background-picture{
         background: url(images/Website-Background-Mobile.png) no-repeat center center fixed;
-        width: 100%;
+        width: auto;
         height: 730px;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -698,8 +698,19 @@ body.show-nav #header-nav {
 }
 
 #mapid { 
+    background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/06/01/10/harambe2.jpg);
+   
+    width: auto;
+    height: auto;
+}
+@media screen and (max-width: 350px) {
+    #mapid{
+        
+    background-image: url(images/EuropeMap-Highlighted-Mini.png) ;
+    background-size: cover;
     width: 90%;
     height: auto;
+    }
 }
 
 #medium-widget{
