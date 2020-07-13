@@ -545,12 +545,48 @@ body.show-nav #header-nav {
 #background-picture{
   width: 100%;
   height: 730px;
-  background: url(images/Website-Background-V8.png) no-repeat center center fixed;
+  background-color: #d1d1f5;
+  z-index: -2;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   align-items: center;
+}
+#stage1{
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 80%;
+    align-content: center; 
+}
+#stage2{
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: scale(0.8,0.8);
+}
+#stage3{
+    z-index: -1;
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    transform: scale(0.7,0.7);
+}
+#stage4{
+    z-index: -1;
+    position: absolute;
+    top: 30%;
+    left: 75%;
+    transform: scale(0.9,0.9);
+}
+#stage5{
+    z-index: -1;
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    transform: scale(0.7,0.7);
 }
 @media screen and (max-width: 720px) {
     #background-picture{
