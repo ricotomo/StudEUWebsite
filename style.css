@@ -557,7 +557,7 @@ body.show-nav #header-nav {
 
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 80%;
+    top: 85%;
     align-content: center; 
 }
 #stage2{
@@ -584,9 +584,15 @@ body.show-nav #header-nav {
 #stage5{
     z-index: -1;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 60%;
     transform: scale(0.7,0.7);
+}
+#stage-bubbles{
+    z-index: -1;
+    position: absolute;
+    top: 55%;
+    align-content: center;
 }
 @media screen and (max-width: 720px) {
     #background-picture{
