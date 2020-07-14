@@ -94,10 +94,10 @@ function blog(){
     console.log(x);
 
      if (x.matches) {
-         MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@philippsandner","postsPerLine":1,"limit":3,"picture":"small","fields":["author","publishAt"],"ratio":"landscape"}});
+         MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@studeu","postsPerLine":1,"limit":3,"picture":"small","fields":["author","publishAt"],"ratio":"landscape"}});
          
      } else {
-         MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@philippsandner","postsPerLine":3,"limit":3,"picture":"small","fields":["author","publishAt"],"ratio":"landscape"}});
+         MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@studeu","postsPerLine":3,"limit":3,"picture":"small","fields":["author","publishAt"],"ratio":"landscape"}});
      }
     }
     
