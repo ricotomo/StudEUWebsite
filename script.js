@@ -168,7 +168,10 @@ function blog(){
             setTimeout(unshowMessage, 4000);
           }});
       }
+
     /**callback function for recaptcha
     function ccb(response) {
         $(‘:input[type="submit"]’).prop('disabled', false);
      } **/
+
+
