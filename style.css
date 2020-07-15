@@ -560,12 +560,21 @@ body.show-nav #header-nav {
     top: 85%;
     align-content: center; 
 }
+@media screen and (max-width: 720px) {
+    #stage1{
+        /**The Studying Lady no change needed**/
+    }
+}
 #stage2{
     z-index: -1;
     position: absolute;
     top: 50%;
     left: 30%;
     transform: scale(0.8,0.8);
+}
+@media screen and (max-width: 720px) {
+    #stage2{
+    }
 }
 #stage3{
     z-index: -1;
@@ -574,12 +583,20 @@ body.show-nav #header-nav {
     left: 18%;
     transform: scale(0.7,0.7);
 }
+@media screen and (max-width: 720px) {
+    #stage3{
+    }
+}
 #stage4{
     z-index: -1;
     position: absolute;
     top: 30%;
     left: 75%;
     transform: scale(0.9,0.9);
+}
+@media screen and (max-width: 720px) {
+    #stage4{
+    }
 }
 #stage5{
     z-index: -1;
@@ -588,13 +605,17 @@ body.show-nav #header-nav {
     left: 60%;
     transform: scale(0.7,0.7);
 }
+@media screen and (max-width: 720px) {
+    #stage5{
+    }
+}
 #stage-bubbles{
     z-index: -1;
     position: absolute;
     top: 55%;
     align-content: center;
 }
-@media screen and (max-width: 720px) {
+/**@media screen and (max-width: 720px) {
     #background-picture{
         background: url(images/Website-Background-Mobile.png) no-repeat center center fixed;
         width: auto;
@@ -605,7 +626,7 @@ body.show-nav #header-nav {
         background-size: cover;
         align-items: center;
     }
-}
+} **/
 #sent-message{
     
 }
