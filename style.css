@@ -542,19 +542,14 @@ body.show-nav #header-nav {
 }
 
 /* Content */
-#background-picture{
+#background-frame{
   width: 100%;
   height: 730px;
   background-color: #d1d1f5;
   z-index: -2;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  align-items: center;
 }
 #stage1{
-
+    /**The Studying Lady**/
     position: absolute;
     transform: translate(-50%, -50%);
     top: 85%;
@@ -562,10 +557,11 @@ body.show-nav #header-nav {
 }
 @media screen and (max-width: 720px) {
     #stage1{
-        /**The Studying Lady no change needed**/
+        /**no change needed**/
     }
 }
 #stage2{
+    /**the windmill**/
     z-index: -1;
     position: absolute;
     top: 50%;
@@ -574,24 +570,36 @@ body.show-nav #header-nav {
 }
 @media screen and (max-width: 720px) {
     #stage2{
+        z-index: -1;
+        position: absolute;
+        top: 65%;
+        left: 2%;
+        transform: scale(0.6,0.6);
     }
 }
 #stage3{
+    /**the viking boat**/
     z-index: -1;
     position: absolute;
     top: 30%;
     left: 18%;
-    transform: scale(0.7,0.7);
+    transform: scale(0.8,0.8);
 }
 @media screen and (max-width: 720px) {
     #stage3{
+    z-index: -1;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    transform: scale(0.5,0.5);
     }
 }
 #stage4{
+    /**the Brandenburger Tor **/
     z-index: -1;
     position: absolute;
-    top: 30%;
-    left: 75%;
+    top: 55%;
+    right: 5%;
     transform: scale(0.9,0.9);
 }
 @media screen and (max-width: 720px) {
@@ -599,6 +607,7 @@ body.show-nav #header-nav {
     }
 }
 #stage5{
+    /**the Eiffel Tower**/
     z-index: -1;
     position: absolute;
     top: 50%;
@@ -607,6 +616,7 @@ body.show-nav #header-nav {
 }
 @media screen and (max-width: 720px) {
     #stage5{
+   display: none;
     }
 }
 #stage-bubbles{
@@ -614,6 +624,11 @@ body.show-nav #header-nav {
     position: absolute;
     top: 55%;
     align-content: center;
+}
+@media screen and (max-width: 720px) {
+    #stage-bubbles{
+        transform: scale(0.7,0.7);
+    }
 }
 /**@media screen and (max-width: 720px) {
     #background-picture{
