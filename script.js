@@ -110,7 +110,7 @@ function blog(){
     function submitToAPI(e) {
         console.log("start-submit");
         e.preventDefault();
-        var URL = "https://api.studeu.net/contact";
+        var URL = "https://endpoint.studeu.net/contact";
  
              /**var Namere = /[A-Za-z]{1}[A-Za-z]/;
              if (!Namere.test($("#form-name").val())) {
@@ -146,8 +146,7 @@ function blog(){
  
         $.ajax({
           type: "POST",
-          //url : "https://8yq7hi2oli.execute-api.us-east-2.amazonaws.com/Alpha/contact",
-          url : "https://api.studeu.net/contact",
+          url : "https://endpoint.studeu.net/contact",
           dataType: "json",
           crossDomain: "true",
           contentType: "application/json; charset=utf-8",
