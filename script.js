@@ -156,7 +156,7 @@ function blog(){
           success: function () {
             // clear form and show a success message
             document.getElementById("sent-message").innerHTML = "Thanks, your message has been sent!";
-            setTimeout(unshowMessage, 1000);
+            setTimeout(unshowMessage, 6000);
             document.getElementById("form").reset();
             location.reload();
           },
