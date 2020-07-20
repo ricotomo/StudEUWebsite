@@ -51,13 +51,13 @@
 }
 
 /* Setup */
-@import url(//db.onlinewebfonts.com/c/e130d119682ecb567748343bf7f263b0?family=Franklin+Gothic+Book);
-@import url(//db.onlinewebfonts.com/c/a8d23046bc8d38ee78b38e95ec47f9e5?family=Franklin+Gothic+Medium);
-@import url(//db.onlinewebfonts.com/c/082252176f1f4953cea2a7e5e9f300f4?family=Franklin+Gothic+Demi);
-@font-face {font-family: "Franklin Gothic Book"; src: url("//db.onlinewebfonts.com/t/e130d119682ecb567748343bf7f263b0.eot"); src: url("//db.onlinewebfonts.com/t/e130d119682ecb567748343bf7f263b0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e130d119682ecb567748343bf7f263b0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e130d119682ecb567748343bf7f263b0.woff") format("woff"), url("//db.onlinewebfonts.com/t/e130d119682ecb567748343bf7f263b0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e130d119682ecb567748343bf7f263b0.svg#Franklin Gothic Book") format("svg"); }
-@font-face {font-family: "Franklin Gothic Medium"; src: url("//db.onlinewebfonts.com/t/a8d23046bc8d38ee78b38e95ec47f9e5.eot"); src: url("//db.onlinewebfonts.com/t/a8d23046bc8d38ee78b38e95ec47f9e5.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a8d23046bc8d38ee78b38e95ec47f9e5.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a8d23046bc8d38ee78b38e95ec47f9e5.woff") format("woff"), url("//db.onlinewebfonts.com/t/a8d23046bc8d38ee78b38e95ec47f9e5.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a8d23046bc8d38ee78b38e95ec47f9e5.svg#Franklin Gothic Medium") format("svg"); }
-@font-face {font-family: "Franklin Gothic Book"; src: url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.eot"); src: url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.woff") format("woff"), url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.svg#Franklin Gothic Demi") format("svg"); font-weight: bold; }
-@font-face {font-family: "Franklin Gothic Medium"; src: url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.eot"); src: url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.woff") format("woff"), url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.svg#Franklin Gothic Demi") format("svg"); font-weight: bold; }
+@import url(https://db.onlinewebfonts.com/c/e130d119682ecb567748343bf7f263b0?family=Franklin+Gothic+Book);
+@import url(https://db.onlinewebfonts.com/c/a8d23046bc8d38ee78b38e95ec47f9e5?family=Franklin+Gothic+Medium);
+@import url(https://db.onlinewebfonts.com/c/082252176f1f4953cea2a7e5e9f300f4?family=Franklin+Gothic+Demi);
+@font-face {font-family: "Franklin Gothic Book"; src: url("https://db.onlinewebfonts.com/t/e130d119682ecb567748343bf7f263b0.eot"); src: url("https://db.onlinewebfonts.com/t/e130d119682ecb567748343bf7f263b0.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/e130d119682ecb567748343bf7f263b0.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/e130d119682ecb567748343bf7f263b0.woff") format("woff"), url("https://db.onlinewebfonts.com/t/e130d119682ecb567748343bf7f263b0.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/e130d119682ecb567748343bf7f263b0.svg#Franklin Gothic Book") format("svg"); }
+@font-face {font-family: "Franklin Gothic Medium"; src: url("https://db.onlinewebfonts.com/t/a8d23046bc8d38ee78b38e95ec47f9e5.eot"); src: url("https://db.onlinewebfonts.com/t/a8d23046bc8d38ee78b38e95ec47f9e5.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/a8d23046bc8d38ee78b38e95ec47f9e5.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/a8d23046bc8d38ee78b38e95ec47f9e5.woff") format("woff"), url("https://db.onlinewebfonts.com/t/a8d23046bc8d38ee78b38e95ec47f9e5.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/a8d23046bc8d38ee78b38e95ec47f9e5.svg#Franklin Gothic Medium") format("svg"); }
+@font-face {font-family: "Franklin Gothic Book"; src: url("https://db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.eot"); src: url("https://db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.woff") format("woff"), url("https://db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.svg#Franklin Gothic Demi") format("svg"); font-weight: bold; }
+@font-face {font-family: "Franklin Gothic Medium"; src: url("https://db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.eot"); src: url("https://db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.woff") format("woff"), url("https://db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/082252176f1f4953cea2a7e5e9f300f4.svg#Franklin Gothic Demi") format("svg"); font-weight: bold; }
 
 * {
     -webkit-tap-highlight-color: transparent;
@@ -566,7 +566,7 @@ body.show-nav #header-nav {
     position: absolute;
     top: 50%;
     left: 30%;
-    transform: scale(0.8,0.8);
+    transform: scale(0.9,0.9);
 }
 @media screen and (max-width: 720px) {
     #stage2{
@@ -577,13 +577,22 @@ body.show-nav #header-nav {
         transform: scale(0.6,0.6);
     }
 }
+@media screen and (max-width: 380px) {
+    #stage2{
+        z-index: -1;
+        position: absolute;
+        top: 60%;
+        left: 2%;
+        transform: scale(0.4,0.4);
+    }
+}
 #stage3{
     /**the viking boat**/
     z-index: -1;
     position: absolute;
     top: 30%;
     left: 18%;
-    transform: scale(0.8,0.8);
+    transform: scale(0.9,0.9);
 }
 @media screen and (max-width: 720px) {
     #stage3{
@@ -594,16 +603,30 @@ body.show-nav #header-nav {
     transform: scale(0.5,0.5);
     }
 }
+@media screen and (max-width: 380px) {
+    #stage3{
+    z-index: -1;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    transform: scale(0.3,0.3);
+    }
+}
 #stage4{
     /**the Brandenburger Tor **/
     z-index: -1;
     position: absolute;
     top: 55%;
     right: 5%;
-    transform: scale(0.9,0.9);
+    transform: scale(1.2,1.2);
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 380px) {
     #stage4{
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: scale(0.6,0.6);
     }
 }
 #stage5{
@@ -612,7 +635,7 @@ body.show-nav #header-nav {
     position: absolute;
     top: 50%;
     left: 60%;
-    transform: scale(0.7,0.7);
+    transform: scale(0.9,0.9);
 }
 @media screen and (max-width: 720px) {
     #stage5{
@@ -630,18 +653,7 @@ body.show-nav #header-nav {
         transform: scale(0.7,0.7);
     }
 }
-/**@media screen and (max-width: 720px) {
-    #background-picture{
-        background: url(images/Website-Background-Mobile.png) no-repeat center center fixed;
-        width: auto;
-        height: 730px;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        align-items: center;
-    }
-} **/
+
 #sent-message{
     
 }
@@ -776,17 +788,20 @@ body.show-nav #header-nav {
 }
 
 #mapid { 
-    background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/06/01/10/harambe2.jpg);
     width: auto;
     height: auto;
 }
 @media screen and (max-width: 350px) {
     #mapid{
-        
-    background-image: url(images/EuropeMap-Highlighted-Mini.png) ;
-    background-size: cover;
-    width: 90%;
-    height: auto;
+        z-index: -1;
+        transform: scale(0.5,0.5);
+        vertical-align: middle;
+        text-align: center;
+        align-self:center;
+        align-items: center;
+        align-content: center;
+        position: relative;
+        justify-content: center;
     }
 }
 
