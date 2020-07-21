@@ -650,6 +650,11 @@ body.show-nav #header-nav {
         transform: scale(0.7,0.7);
     }
 }
+@media screen and (max-width: 380px) {
+    #stage-bubbles{
+        display: none;
+    }
+}
 
 #sent-message{
     
@@ -788,7 +793,7 @@ body.show-nav #header-nav {
     width: auto;
     height: auto;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
     #mapid{
         z-index: -1;
         transform: scale(0.5,0.5);
