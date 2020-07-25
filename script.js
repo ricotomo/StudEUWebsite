@@ -119,16 +119,14 @@ function blog(){
                  return;
              }
              /** 
-             var mobilere = /[0-9]{10}/;
-             if (!mobilere.test($("#form-phone").val())) {
-                 alert ("Please enter valid mobile number");
+             var phone_check = /[+0-9]{1,14}/;
+             if (!phone_check.test($("#form-phone").val())) {
+                document.getElementById("sent-message").innerHTML = "Please check your entries!";
+                $("#form-phone").css("box-shadow", "0 0 5px red");
                  return;
              }
-             if ($("#form-email").val()=="") {
-                 alert ("Please enter your email id");
-                 return;
              }
- 
+                /** 
              var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
              if (!reeamil.test($("#email-input").val())) {
                  alert ("Please enter valid email address");
