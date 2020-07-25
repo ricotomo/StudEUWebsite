@@ -112,11 +112,13 @@ function blog(){
         e.preventDefault();
         var URL = "https://endpoint.studeu.net/contact";
  
-             /**var Namere = /[A-Za-z]{1}[A-Za-z]/;
-             if (!Namere.test($("#form-name").val())) {
-                          alert ("Name can not less than 2 char");
+             var name_check = /[A-Za-z]{1}[A-Za-z]/;
+             if (!name_check.test($("#form-name").val())) {
+                          document.getElementById("sent-message").innerHTML = "Please check your entries!";
+                          $("#form-name").css("box-shadow", "0 0 5px red");
                  return;
              }
+             /** 
              var mobilere = /[0-9]{10}/;
              if (!mobilere.test($("#form-phone").val())) {
                  alert ("Please enter valid mobile number");
