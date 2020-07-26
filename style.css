@@ -68,7 +68,7 @@
 
 
 html {
-    scroll-behavior: smooth;
+    /**scroll-behavior: smooth;**/
     overflow-x: hidden;
   }
 
@@ -516,6 +516,13 @@ body.show-nav #header-nav {
     padding: 0 16px;
     line-height: 4rem;
 }
+#header-nav-menu div {
+    display: block;
+    color: var(--color-font-nav);
+    padding: 0 16px;
+    line-height: 4rem;
+}
+
 
 @media (min-width: 720px) {
     #header-nav {
@@ -538,6 +545,13 @@ body.show-nav #header-nav {
     #header-nav-menu a {
         color: var(--color-font-body);
         line-height: 3rem;
+    }
+    #header-nav-menu div {
+        color: var(--color-font-body);
+        line-height: 3rem;
+    }
+    #header-nav-menu div:hover {
+        text-decoration: underline;
     }
 }
 
@@ -804,6 +818,8 @@ body.show-nav #header-nav {
     align-items: center;
 }
 
+
+
 #mapid { 
     width: auto;
     height: auto;
@@ -925,6 +941,11 @@ body.show-nav #header-nav {
     color: #fff;
     background: var(--color-background-section-services);
     margin-bottom: 5rem;
+}
+
+
+p1.underline-me:hover{
+    text-decoration: underline;
 }
 
  #service-image{
