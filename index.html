@@ -24,19 +24,19 @@
                 <button id="header-nav-close" class="header-nav-button button icon-button">&times;</button>
                 <ul id="header-nav-menu" class="menu-list">
                     <li class="menu-item">
-                        <a href="#studying-in-Europe">Study in Europe</a>
+                        <div onclick="scrollToElement('studying-in-Europe')">Study in Europe</div>
                     </li>
                     <li class="menu-item">
-                        <a href="#services">Our Services</a>
+                        <div onclick="scrollToElement('services')">Our Services</div>
                     </li>
                     <li class="menu-item">
-                        <a href="#about">About</a>
+                        <div onclick="scrollToElement('about')">About</div>
                     </li>
                     <li class="menu-item">
-                        <a href="#blog">Blog</a>
+                        <div onclick="scrollToElement('blog')">Blog</div>
                     </li>
                     <li class="menu-item">
-                        <a href="#contact">Contact</a>
+                        <div onclick="scrollToElement('contact')">Contact</div>
                     </li>
                 </ul>
             </nav>
@@ -48,7 +48,7 @@
                     <div class="section-heading"><h3 style="margin-bottom: -1rem; padding: 0rem;"><b>Welcome to <span style="color: #583D9E;">StudEU</span></b></h3></div>
                     <h2 style="margin-bottom: -2rem;">Education can be an adventure</h2>
                     <a href="#studying-in-Europe">
-                        <button class="button button-primary center button-start" style="align-items: center; ">Learn How</button>
+                        <button class="button button-primary center button-start" style="align-items: center;">Learn How</button>
                     </a>                 
                     <img id="stage1" src="./images/stage 2.0/Asset 1@0.75x.png">
                     <img id="stage2" src="./images/stage 2.0/Asset 2.png">
@@ -58,7 +58,7 @@
                     <img id="stage-bubbles" src="./images/stage 2.0/Asset 7@0.75x.png">
                 </div>
       </section>
-        <a name="studying-in-Europe"></a>
+        <span id="studying-in-Europe"></span>
         <section  class="flex-grid" style="margin-top: 0rem; padding-top: 0rem;">
             <div class="flex-col">
             </div>
@@ -108,7 +108,7 @@
                                 <div class="reasons-list-number">1.</div>
                             </div>
                             <div class="flex-col flex-col-reasons">
-                                <p2 id="reason1"><b>Fast</b> - A bachelor's degree in Europe only takes 3 years, and is internationally recognized. Get a head start on a career. </p2>
+                                <p2 id="reason1"><b>Fast</b> -  A bachelor's degree in Europe only takes 3 years, and is internationally recognized. Get a head start on a career. </p2>
                             </div>
                         </div>
                         <div class="flex-grid">
@@ -116,7 +116,7 @@
                                 <div class="reasons-list-number">2.</div>
                             </div>
                             <div class="flex-col flex-col-reasons">
-                                <p2 id="reason2"><b>Competitive Boost</b> - Europe offers excellent academic and career opportunities. Because of a shrinking and aging population Europe is welcoming to foreigners. This gives you an extra boost in getting prestigious positions.</p2>
+                                <p2 id="reason2"><b >Competitive Boost</b> - Europe offers excellent academic and career opportunities. Because of a shrinking and aging population Europe is welcoming to foreigners. This gives you an extra boost in getting prestigious positions.</p2>
                             </div>
                         </div>
                         <div class="flex-grid" >
@@ -143,7 +143,7 @@
                                 <p2 id="reason5"><b>Language</b> - Learning to speak a second language can open a world of new possibilites.</p2>
                             </div>
                         </div>
-                        <a href="https://medium.com/@studeu/5-great-reasons-for-your-child-to-study-full-time-in-europe-77529d9ef57d">
+                        <a id = "blog-more-info" href="https://medium.com/@studeu/5-great-reasons-for-your-child-to-study-full-time-in-europe-77529d9ef57d">
                             <h1 style="color:#583D9E;">Get the full details on our blog → </h1>
                         </a>
                     </div>        
@@ -151,7 +151,7 @@
                     <img src="images/Person-Showing.png" id="person-image">
                 </div>
         </section>
-        <a name="services"></a>
+        <span id="services"></span>
         <section id="section-services" class="flex-grid">
                 <div class="flex-col">
                 </div>
@@ -174,7 +174,7 @@
                             </div>
                         
                         <br><br><br>
-                        <a href="#contact" onclick="prefillMessage('explore')"><p1 class="purple-text"><b>Get in touch!→</b></p1></a>
+                        <span  onclick="prefillMessage('explore'); scrollToElement('contact')"><p1 class="underline-me purple-text"><b>Get in touch!→</b></p1></span>
                     </div>
                     <div class="flex-col" style="align-self: flex-start; justify-content: center; margin-bottom: 1.5rem;  text-align: center;">
                         <img src="images/Service-Apply.png" id="service-image">
@@ -187,7 +187,7 @@
                             </p1>
                         </div>
                         <br><br>
-                        <a href="#contact" onclick="prefillMessage('apply')"><p1 class="purple-text"><b>Get in touch!→</b></p1></a>
+                        <span onclick="prefillMessage('apply'); scrollToElement('contact')"><p1 class="underline-me purple-text"><b>Get in touch!→</b></p1></span>
                     </div>
                     <div class="flex-col" style="align-self: flex-start; justify-content: center; margin-bottom: 1.5rem;  text-align: center;">
                         <img src="images/Service-Relocate.png" id="service-image">
@@ -198,11 +198,11 @@
                             </p1>
                         </div>
                         <br><br><br>
-                        <a href="#contact" onclick="prefillMessage('relocate')"><p1 class="purple-text"><b>Get in touch!→</b></p1></a>
+                        <span onclick="prefillMessage('relocate'); scrollToElement('contact')"><p1 class="underline-me purple-text"><b>Get in touch!→</b></p1></span>
                     </div>
                 </div>
         </section>
-        <a name="about"></a>
+        <span id="about"></span>
         <section id="section-about" class="flex-grid">
             <div class="flex-col">
             </div>
@@ -249,7 +249,7 @@
                             </div>
             </div>
         </section>
-        <a name="blog"></a>
+        <span id="blog"></span>
         <section id="section-blog" class="section">
             <h2 class="purple-text"><b>Blog</b></h2>
             <a href="https://medium.com/@studeu">
@@ -261,7 +261,7 @@
                 blog();
             </script>
         </section>
-        <a name="contact"></a>
+        <span id="contact"></span>
         <section id="section-contact" class="flex-grid"> 
             <div class="flex-col" id="contact-text">
                 <h2><b>Contact Us</b></h2>

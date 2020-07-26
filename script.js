@@ -168,6 +168,13 @@ function blog(){
           }});
       }
 
+      // Scroll to a certain element
+      function scrollToElement(x){
+        var elmnt = document.getElementById(x);
+        elmnt.scrollIntoView({ 
+            behavior: 'smooth' 
+        })};
+
     /**callback function for recaptcha
     function ccb(response) {
         $(‘:input[type="submit"]’).prop('disabled', false);
