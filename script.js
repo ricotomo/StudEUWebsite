@@ -68,6 +68,7 @@ function changeText() {
         document.getElementById("reason3").innerHTML = "<b>Education Style</b> - In European universities you usually don't get homework and there are no quizes. How does that sound?! Classes are smaller and familiar leading to lifelong friendships between classmates ";
         document.getElementById("reason4").innerHTML = "<b>Social Life</b> - Europe's laws are much less restrictive than in the USA regarding partying. Clubs and bars are open to anyone 18+ (even 16 in many countries).";
         document.getElementById("reason5").innerHTML = "<b>Independence</b> - European universities don't baby their students. If you're 18 you're an adult. That means no RA's, shared dorms, meal plans, attendance, etc - of course this come with much more responsibility."; 
+        document.getElementById("blog-more-info").href = "https://medium.com/@studeu/5-great-reasons-to-study-abroad-in-europe-full-time-3672f0b883f9"
     } else {
         // reasons for parents
         document.getElementById("reason1").innerHTML = "<b>Fast</b> - A bachelor's degree in Europe only takes 3 years, and is internationally recognized. Get a head start on a career.";
@@ -75,6 +76,7 @@ function changeText() {
         document.getElementById("reason3").innerHTML = "<b>Excellent Value</b> - European university is much cheaper than in the USA. In many countries there is no tuition fee. The cost of living is also cheaper (with a few exceptions in Scandanavia).";
         document.getElementById("reason4").innerHTML = "<b>Diversity</b> - Give your child the chance to experience the diversity of cultures in Europe! Experiencing new languages, places, and people is garaunteed to broaden horizons.";
         document.getElementById("reason5").innerHTML = "<b>Language</b> - Learning to speak a second language can open a world of new possibilites.";
+        document.getElementById("blog-more-info").href = "https://medium.com/@studeu/5-great-reasons-for-your-child-to-study-full-time-in-europe-77529d9ef57d"
     }
   }
 
