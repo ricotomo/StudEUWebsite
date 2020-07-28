@@ -589,7 +589,7 @@ body.show-nav #header-nav {
         z-index: -1;
         position: absolute;
         top: 65%;
-        left: 2%;
+        left: -5%;
         transform: scale(0.6,0.6);
         z-index: 1;
     }
@@ -599,7 +599,7 @@ body.show-nav #header-nav {
         z-index: -1;
         position: absolute;
         top: 60%;
-        left: 2%;
+        left: -5%;
         transform: scale(0.4,0.4);
         z-index: 1;
     }
