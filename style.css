@@ -579,8 +579,8 @@ body.show-nav #header-nav {
     /**the windmill**/
     z-index: -1;
     position: absolute;
-    top: 50%;
-    left: 30%;
+    top: 60%;
+    left: 10%;
     transform: scale(0.9,0.9);
     z-index: 1;
 }
@@ -637,7 +637,7 @@ body.show-nav #header-nav {
     /**the Brandenburger Tor **/
     z-index: -1;
     position: absolute;
-    top: 55%;
+    top: 50%;
     right: 5%;
     transform: scale(1.2,1.2);
     z-index: 1;
@@ -675,8 +675,7 @@ body.show-nav #header-nav {
 }
 @media screen and (max-width: 720px) {
     #stage-bubbles{
-        transform: scale(0.7,0.7);
-        z-index: 1;
+        display: none;
     }
 }
 @media screen and (max-width: 380px) {
