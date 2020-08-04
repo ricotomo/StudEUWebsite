@@ -45,7 +45,7 @@ function prefillMessage(x){
     if (x === 'explore'){
         document.getElementById("form-message").value = "I would like to find out more about what educational opportunities exist for me in Europe. Please get in touch!";  
     } else if (x === 'apply') {
-        document.getElementById("form-message").value = "I want to study in Europe, and I've already found the perfect program! I want your help to get accepted. Please get in touch! .";
+        document.getElementById("form-message").value = "I want to study in Europe, and I've already found the perfect program! I want your help to get accepted. Please get in touch!";
     } else if (x === 'relocate'){
         document.getElementById("form-message").value = "I found the perfect study program in Europe, and have been accepted. I'm really excited to go! Now I need help planning my move. Please get in touch! ";
     } else {
@@ -173,9 +173,21 @@ function blog(){
       // Scroll to a certain element
       function scrollToElement(x){
         var elmnt = document.getElementById(x);
+        /**var element = document.getElementById(x);
+        var headerOffset = 40;
+        var elementPosition = element.getBoundingClientRect().top;
+        var offsetPosition = elementPosition - headerOffset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });**/
+        elmnt.offsetTop += 1000;
         elmnt.scrollIntoView({ 
-            behavior: 'smooth' 
-        })};
+            behavior: 'smooth',
+            block: 'center'
+        })
+    };
 
     /**callback function for recaptcha
     function ccb(response) {
