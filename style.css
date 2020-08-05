@@ -770,7 +770,7 @@ body.show-nav #header-nav {
 
 .person-img{
     width: 100%;
-    max-width: 124px;
+    max-width: 210px;
     height: auto;
     border-radius: 50%;
     border: 5px solid #583D9E;
@@ -948,12 +948,16 @@ p1.underline-me:hover{
 }
 
  #service-image{
+    cursor: pointer;
     width:90%;
     height:30%;
     object-fit:cover;
     
   }
-
+#service-image:hover{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24), 0 2px 2px 0 rgba(0,0,0,0.19);
+}
+}
 #form {
     display: flex;
     flex-flow: column nowrap;
@@ -967,7 +971,9 @@ p1.underline-me:hover{
     width:100%;
     
 }
-
+#column{
+    max-width: 20%;
+}
 #form-message {
     min-height: 175px;
     min-width: 300px;
