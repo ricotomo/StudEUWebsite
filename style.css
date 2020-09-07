@@ -200,6 +200,13 @@ p2{
 .button-secondary {
     border: 1px solid var(--color-background-button-primary);
 }
+
+.button-school{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .center {
     margin: 0;
     position: absolute;
@@ -1014,4 +1021,10 @@ p1.underline-me:hover{
     padding: 16px;
     width: 100%;
     max-width: var(--metric-content-width);
+}
+
+/* Scool Page */
+
+.why-school {
+    background: var(--color-light-purple);
 }
