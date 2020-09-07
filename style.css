@@ -6,6 +6,8 @@
 
     --color-font-body: #2D4454;
     --color-font-link: #583D9E;
+
+    --color-light-purple: #D1D1F5;
     
     --font-body: 'Franklin Gothic Medium', 'Franklin Gothic Book', Arial, sans-serif;
     
@@ -683,6 +685,14 @@ body.show-nav #header-nav {
         display: none;
     }
 }
+#letter-bckgnd{
+    width: 60%;
+    Height: auto;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #sent-message{
     
@@ -690,6 +700,10 @@ body.show-nav #header-nav {
 #content {
     width: 100%;
     z-index: 0;
+}
+
+.letter-image{
+    background: linear-gradient(to top, var(--color-light-purple) 50%, white 50%);
 }
 .flex-grid {
   display: flex;
@@ -808,7 +822,7 @@ body.show-nav #header-nav {
     display: block;
     font-size: 2rem;
     text-align: center;
-    margin: 2rem 0;
+    margin: 0rem 0;
     width: 100%;
 }
 
