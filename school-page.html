@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudEU</title>
+    <link rel="icon" type="image/png" href="images/favicon3.png"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+   <script src="script.js"></script>
+</head>
+<body>
+    <!--test-->
+    <header id="header">
+        <div id="header-inner">
+
+            <a id="header-logo" href="#">
+                <img src="images/Artboard 1.svg" alt="">
+            </a>
+            <button id="header-nav-open" class="header-nav-button button icon-button">☰</button>
+            <nav id="header-nav">
+                <button id="header-nav-close" class="header-nav-button button icon-button">&times;</button>
+                <ul id="header-nav-menu" class="menu-list">
+                    <li class="menu-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="index.html/#services">Our Services</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="index.html/#about">About</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="index.html/#blog">Blog</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="index.html/#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+                <div class="section-heading"><h3 style="margin-bottom: -1rem; padding: 0rem;"><b>Welcome to <span style="color: #583D9E;">StudEU</span></b></h3></div>
+                <h2 style="margin-bottom: -2rem;">Education can be an adventure</h2>
+        </section>
+        <section class="">
+            <img id="letter-bckgnd" src="./images/letter.png">
+        </section>
+        <span id="contact">
+            <section id="section-contact" class="flex-grid"> 
+                <div class="flex-col" id="contact-text">
+                    <h2><b>Contact Us</b></h2>
+                    <p2>Reach out to us for a free consultation. We are happy to share details of our service and talk about your requirements. We're here to help!</p2>
+                    <a href="mailto:hello@studeu.net">
+                    <h1>hello@studeu.net</h1> </a>
+                    <a href="tel:610-203-1419">
+                    <h1>610-203-1419</h1></a>
+                </div>
+    
+                <div class="flex-col" style="padding:0rem;">
+                        <form id="form" onsubmit="submitToAPI(event)">
+                        <div class="form-row">
+                            <input name="name" id="form-name" type="text" class="input" placeholder="Your Name (required)" required>
+                        </div>
+                        <div class="form-row">
+                            <div class = "flex-grid" style="padding:0rem;">
+                                    <div class="flex-col flex-col-half" >
+                                        <input name="email" id="form-email" type="email" class="input" placeholder="Your Email (required)" required>
+                                    </div>
+                                    <div class="flex-col flex-col-half">
+                                        <input name="phone" id="form-phone" class="input" placeholder="Your Phone">
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <textarea name="message" id="form-message" class="input" placeholder="Your Message"></textarea>
+                        </div>
+                        <!--<div class="g-recaptcha" data-sitekey="6LcpQLAZAAAAAIV9UxPJZCe8Hn0rrVC9Y1Fi3FU3" data-callback=”ccb”></div><span></span>-->
+                        <div class="form-row">
+                            <button type="submit" id="form-submit" class="button button-send">Submit</button>
+                        </div>
+                    </form>
+                    <div id="sent-message"></div>
+                </div>
+            </section>
+            </span>
+    </main>
+</body>
+<footer id="footer" style="text-align: center;">
+    <div id="footer-inner">
+        <img src="images/coffee-mug.png" id="footer-picture">
+        <br>
+        <p1>© 2020 - StudEU LLC</p1>
+        <p1 style="display: inline-block;">Fonts by onlinewebfonts.com. Licensed under Creative Commons.</p1>
+    </div>
+</footer>
+</html>
+
