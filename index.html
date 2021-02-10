@@ -258,14 +258,25 @@
         <span id="blog">
         <section id="section-blog" class="section">
             <h2 class="purple-text"><b>Blog</b></h2>
-            <a href="https://medium.com/studeu">
-                <h1> Read all  our stories on Medium → </h1>
-            </a>
+            
             <div id="medium-widget"></div>
+            <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+            <script>
+                var x = window.matchMedia("(max-width: 720px)");
+                if (x.matches) {
+                    MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/studeu","postsPerLine":1,"limit":3,"picture":"small","fields":["author","publishAt"],"ratio":"square"}})
+                } else {
+                    MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/studeu","postsPerLine":3,"limit":3,"picture":"small","fields":["author","publishAt"],"ratio":"square"}})
+                }
+            </script>
+            <a href="https://medium.com/studeu">
+                <h1 style="margin-top: 3rem;"> Read all  our stories on Medium → </h1>
+            </a>
+            <!-- <div id="medium-widget"></div>
             
             <script>
                 blog();
-            </script>
+            </script> -->
         </section>
         </span>
         <span id="contact">
