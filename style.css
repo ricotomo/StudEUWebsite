@@ -472,6 +472,9 @@ input:checked + .switch-slider {
     display: block;
     width: 121px;
     height: 171px;
+    float: left;
+    padding-left: -15rem;
+    margin-left: -10rem;
     }
 
 #header-logo > img {
