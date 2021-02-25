@@ -42,16 +42,44 @@
         </div>
     </header>
 <body>
-    <main style="padding-top: 10rem;">
-        
-        <div class="flex-col" style="flex-grow: 2 !important; border: 2px;">
+        <div class = "flex-container" style="display: flex; padding-top: 5rem; border-style: solid; width: 100%; height: 80%">
+        <div style="flex-grow: 2; border-style: solid;">
             <h1>test</h1>
         </div>
         
-        <div class="flex-col" style="flex-grow: 1 !important; border: 2px;">
+        <div style="flex-grow: 1 ; border-style: solid; ">
             <h1>test</h1>
-        </div>        
-    </main>
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="tuition">🤳  It's All About You</label>
+                </br>
+                    <input type="firstname" class="form-control" placeholder="Your first name" name="firstname">
+                </br>
+                    <input type="lastname" class="form-control" placeholder="Your last name" name="lastname">
+                  </div>
+                  <div class="form-group">
+                    <label for="college">🏫 College</label>
+                    <p class = "form-explainer">What school will you be attending? </p>
+                    <select class="form-control" name="college">
+                        <option value="" disabled selected>Select your future college</option>
+                        <option>UNIVERSITY OF FLORIDA</option>
+                        <option>CARNEGIE MELLON</option>
+                        <option>HARVARD UNIVERSITY</option>
+                        <option>STANFORD UNIVERSITY</option>
+                        <option>MASSACHUESSETS INSTITUTE OF TECHNOLOGY</option>
+                        <option>SYRACUSE UNIVERSITY</option>
+                        <option>PRINCETON UNIVERSITY</option>
+                        <option>COLUMBIA UNIVERSITY</option>
+                        <option>YALE UNIVERSITY</option>
+                        <option>UNIVERSITY OF CHICAGO</option>
+                        <option>UNIVERSITY OF PENNSYLVANIA</option>
+                        <option>CALIFORNIA INSTITUTE OF TECHNOLOGY</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-default univest-submit">Submit</button>
+            </form>
+        </div>   
+        </div>     
 </body>
 <footer id="footer" style="text-align: center; position: fixed; bottom: 0rem">
     <div id="footer-inner">
