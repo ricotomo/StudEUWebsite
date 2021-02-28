@@ -6,13 +6,11 @@
     <title>StudEU</title>
     <link rel="icon" type="image/png" href="images/favicon3.png"/>
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-   <script src="script.js"></script>
+    <link rel="stylesheet" href="event.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <header id="header">
+    <header id="header" >
         <div id="header-inner">
 
             <a id="header-logo" href="#">
@@ -42,45 +40,57 @@
         </div>
     </header>
 <body>
-        <div class = "flex-container" style="display: flex; padding-top: 5rem; border-style: solid; width: 100%; height: 80%">
-        <div style="flex-grow: 2; border-style: solid;">
-            <h1>test</h1>
+        <div id="event-flex-container" >
+
+            <div id="event-left-col" >
+                <h1>Study in Germany</h1>
+                <h3>Information Session with the Duale Hochschule Baden-Württemberg</h3>
+                <h4>March 23rd, 2020</h4>
+                <p>
+                    The Baden-Wuerttemberg Cooperative State University (DHBW) is a prestigious university located in the south of Germany. It is renowned for its innovative cooperative education model. Students are partnered with a company to get on the job training while working towards their bachelors degree. This gives them the opportunity to apply their knowledge in a practical setting and be financially independent. The DHBW has more than 30,000 enrolled students partnered with over 9,000 companies such as Porsche, IBM, Aldi, KPMG, and SAP. The DHBW offers a multitude of degree programs in German and English. Join our event to find out more about studying at the DHBW. 
+
+                    StudEU offers expert advice for Americans wanting to study full-time in Europe. From personal experience we know that studying in Germany is cheaper, faster, and more fun! StudEU will be available to answer any questions about the practicalities about studying in Germany.
+                </p>
+            </div>
+
+            <div id="event-right-col">
+                <h1 style="text-align: center;">Sign up</h1>
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        </br>
+                        <input type="name" class="form-control" placeholder="Max Mustermann" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="mail">Your Email</label>
+                        </br>
+                        <input type="mail" class="form-control" placeholder="max.mustermann@gmail.com" name="mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="usertype">Are you a parent or student?</label>
+                        <select class="form-control" name="usertype">
+                            <option>Parent</option>
+                            <option>Student</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" checked>
+                        <label class="form-check-label" for="check1">I agree to the data protection rules</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check2" checked>
+                        <label class="form-check-label" for="check2">I want to recieve occasional emails from StudEU about studying in Europe </label>
+                    </div>
+                    </br>
+                    <button type="submit" class="btn btn-default" id="event-button">Submit</button>
+                    
+                </form>
+            </div>
         </div>
-        
-        <div style="flex-grow: 1 ; border-style: solid; ">
-            <h1>test</h1>
-            <form action="" method="post">
-                <div class="form-group">
-                    <label for="tuition">🤳  It's All About You</label>
-                </br>
-                    <input type="firstname" class="form-control" placeholder="Your first name" name="firstname">
-                </br>
-                    <input type="lastname" class="form-control" placeholder="Your last name" name="lastname">
-                  </div>
-                  <div class="form-group">
-                    <label for="college">🏫 College</label>
-                    <p class = "form-explainer">What school will you be attending? </p>
-                    <select class="form-control" name="college">
-                        <option value="" disabled selected>Select your future college</option>
-                        <option>UNIVERSITY OF FLORIDA</option>
-                        <option>CARNEGIE MELLON</option>
-                        <option>HARVARD UNIVERSITY</option>
-                        <option>STANFORD UNIVERSITY</option>
-                        <option>MASSACHUESSETS INSTITUTE OF TECHNOLOGY</option>
-                        <option>SYRACUSE UNIVERSITY</option>
-                        <option>PRINCETON UNIVERSITY</option>
-                        <option>COLUMBIA UNIVERSITY</option>
-                        <option>YALE UNIVERSITY</option>
-                        <option>UNIVERSITY OF CHICAGO</option>
-                        <option>UNIVERSITY OF PENNSYLVANIA</option>
-                        <option>CALIFORNIA INSTITUTE OF TECHNOLOGY</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-default univest-submit">Submit</button>
-            </form>
-        </div>   
-        </div>     
 </body>
+
 <footer id="footer" style="text-align: center; position: fixed; bottom: 0rem">
     <div id="footer-inner">
         <img src="images/coffee-mug.png" id="footer-picture">
