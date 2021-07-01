@@ -5,8 +5,8 @@ StudEU (pronounced "study-you") was a Pennsylvania based consulting company foun
 ![ Homepage Gif](StudEU-Portfolio.gif)
 
 ## Tech Stack
-*HTML
-*CSS
-*Javascript
-*AWS
-*Python
+* HTML
+* CSS
+* Javascript
+* AWS
+* Python
