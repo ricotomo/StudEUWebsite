@@ -1,2 +1,2 @@
 # StudEUWebsite
-![ Homepage Gif](studeu-portfolio. gif)
+![ Homepage Gif](StudEU-Portfolio.gif)
